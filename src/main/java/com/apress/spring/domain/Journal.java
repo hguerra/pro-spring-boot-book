@@ -11,6 +11,7 @@ import javax.persistence.Transient;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +19,7 @@ import lombok.ToString;
 
 @Entity
 @NoArgsConstructor
+@EqualsAndHashCode(exclude = "formatter")
 @ToString(exclude = "formatter")
 public class Journal {
 
